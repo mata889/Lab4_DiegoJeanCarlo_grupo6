@@ -44,7 +44,7 @@ minesweeper::~minesweeper(){
 	cout<<"bueno"<<endl;
 }
 
-char** CrearMatriz( int size){
+char** CrearMatrizChar( int size){
 	char** retorno = new char*[size];
 
 	for(int i=0;i<size;i++){
@@ -62,7 +62,7 @@ char** CrearMatriz( int size){
 	}//Fin del metodo
 
 
-int** CrearMatriz( int size){
+int** CrearMatrizInt( int size){
 	int** retorno = new int*[size];
 
 	for(int i=0;i<size;i++){
