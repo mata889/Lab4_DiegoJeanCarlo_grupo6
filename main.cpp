@@ -7,7 +7,7 @@ int main(){
 	char resp='s';
 	int opcion;
 	while(resp=='s'|| resp=='S'){
-		cout<<"BIENVENIDO \n 1-Login \n 2-Crear usuario \n 3-Ver puntuaciones \n 4-Salir";
+		cout<<"BIENVENIDO \n 1-Login \n 2-Crear usuario \n 3-Ver puntuaciones \n 4-Salir"<<endl<<endl;
 		cin>>opcion;
 		cout<<endl;
 //		vector<jugador> players;
@@ -15,13 +15,31 @@ int main(){
 			case 1:{
 					string usuario;
 					string contra;
+					int n;
+					int k;
 				    cout<<"Ingrese su nombre de usuario"<<endl;
 					cin>>usuario;
 					cout<<"Ingrese password"<<endl;
 					cin>>contra;
 			   
 			
-					cout<<"------ A JUGAR ------";
+					cout<<"------ A JUGAR ------"<<endl;
+					cout<<"Ingrese n (dimension de la matriz) \n Debe ser mayor a 10:"<<endl;
+					cin>>n;
+					while(n<10){
+						cout<<"Ingrese n de nuevo"<<endl;
+						cin>>n;
+					}
+					cout<<"Ingrese k (numero de minas) \n Debe ser menor a n:"<<endl;
+					cin>>k;
+					while(k>n){
+						cout<<"Ingrese k nuevamente"<<endl;
+						cin>>k;
+					}
+					
+
+					cout<<endl<<endl;
+
 
 				}// fin case 1
 				break;
