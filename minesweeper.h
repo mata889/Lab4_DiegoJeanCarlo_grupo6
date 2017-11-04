@@ -26,11 +26,11 @@ class minesweeper{
 		void setMatrizNumero(int**);
 		void setMatrizChar(char**);
 		//
-		char**CrearMatriz(int);
+		char**CrearMatrizChar(int);
 		void llenarMatriz(int**);
 		void imprimirMatrix(int**);
 		void deleteMatrix(int**,int);
-		int** CrearMatriz(int);
+		int** CrearMatrizInt(int);
 		
 		~minesweeper();//destructor
 
