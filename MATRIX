@@ -1,0 +1,63 @@
+int** crearMatrix( int size){
+	int** retorno = new int*[size];
+
+	for(int i=0;i<size;i++){
+		retorno[i]= new int[size];
+	}
+
+	for(int i=0;i<10;i++){
+		for(int j=0;j<10;j++){
+			retorno[i][j]= 0;
+		}
+	
+	}
+
+	return retorno;
+	}//Fin del metodo
+
+void llenarMatrix(int** matriz){
+	for(int i=0;i<10;i++){
+		for(int j=0;j<10;j++){
+			matriz[i][j]= 0;
+		}
+	}
+
+}
+
+void ponerMina(int** mat){
+	for(int i=0;i<10;i++){
+		for(int i=0;i<10;i++){
+			if(mat[3][4]==0){
+				mat[3][4]=9;
+			}
+			if(mat[3][7]==0){
+				mat[3][7]=9;
+			}
+			if(mat[7][7]==0){
+				mat[7][7]=9;
+			}
+		}
+	}
+
+
+}
+
+void imprimirMatrix(int** m){
+	for(int i=0;i<10;i++){
+		for(int j=0;j<10;j++){
+			cout<<m[i][j]<<" ";
+		}
+		cout<<endl;
+	}
+
+
+}
+
+void deleteMatrix(int** matrix, int size){
+	for(int i=0;i<10;i++){
+		delete matrix[i];
+		matrix[i]=NULL;
+	}
+	delete[] matrix;
+
+}
