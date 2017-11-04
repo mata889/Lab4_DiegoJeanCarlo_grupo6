@@ -6,6 +6,7 @@ using namespace std;
 
 class minesweeper{
 	private:
+		
 		int minas;
 		int size;
 		int** matrizNumero;
@@ -26,7 +27,10 @@ class minesweeper{
 		void setMatrizChar(char**);
 		//
 		char**CrearMatriz(int);
-		int**llenarMatriz(int,int);
+		void llenarMatriz(int**);
+		void imprimirMatrix(int**);
+		void deleteMatrix(int**,int);
+		int** CrearMatriz(int);
 		
 		~minesweeper();//destructor
 
